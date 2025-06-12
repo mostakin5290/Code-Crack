@@ -15,7 +15,7 @@ const  discussRoute = require('./src/routes/discussRoutes') ;
 const adminRoutes = require('./src/routes/adminRoutes');
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://codecrack-mm.netlify.app/",
     // origin: 'http://192.168.217.174:5173',
     credentials: true ,
     exposedHeaders: ['set-cookie']
