@@ -26,11 +26,11 @@ authRouter.get('/allDetails/:userId', getFullUserProfile);
 //         role: req.user.role
 //     }
 
-    res.status(200).json({
-        user: reply,
-        message: "Valid User"
-    });
-})
+//     res.status(200).json({
+//         user: reply,
+//         message: "Valid User"
+//     });
+// })
 
 
 module.exports = authRouter;
