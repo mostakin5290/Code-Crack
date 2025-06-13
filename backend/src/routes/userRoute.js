@@ -16,15 +16,15 @@ authRouter.get('/allDetails/:userId', getFullUserProfile);
 
 
 
-authRouter.get('/check', userMiddleware, (req, res) => {
-    const reply = {
-        firstName: req.user.firstName,
-        lastName:req.user.lastName,
-        emailId: req.user.emailId,
-        avatar:req.user.avatar,
-        _id: req.user._id,
-        role: req.user.role
-    }
+// authRouter.get('/check', userMiddleware, (req, res) => {
+//     const reply = {
+//         firstName: req.user.firstName,
+//         lastName:req.user.lastName,
+//         emailId: req.user.emailId,
+//         avatar:req.user.avatar,
+//         _id: req.user._id,
+//         role: req.user.role
+//     }
 
     res.status(200).json({
         user: reply,
